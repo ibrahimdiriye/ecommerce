@@ -1,0 +1,147 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Ensure full height layout */
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #E0E0E0;
+    margin: 0;
+}
+
+.content-wrapper {
+    flex: 1; /* Ensure content takes up available space */
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1F1F1F;
+    padding: 1rem;
+    border-bottom: 1px solid #333;
+    position: relative;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #E0E0E0;
+}
+
+.nav-toggle {
+    display: none; /* Hidden by default */
+    font-size: 2rem;
+    cursor: pointer;
+    color: #E0E0E0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 1.5rem;
+}
+
+.nav-links a {
+    color: #E0E0E0;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Carousel Section */
+.carousel-section {
+    padding: 3rem;
+    text-align: center;
+}
+
+.carousel-section h1, .carousel-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #BB86FC;
+}
+
+/* Carousel Container */
+.carousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 2rem;
+    animation: scroll 20s linear infinite;
+}
+
+.product-card {
+    background-color: #1F1F1F;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.product-card h3 {
+    color: #E0E0E0;
+    margin-bottom: 0.5rem;
+}
+
+.product-card p {
+    color: #03DAC6;
+}
+
+.product-card:hover {
+    transform: scale(1.1);
+    animation-play-state: paused; /* Pause animation on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #1F1F1F;
+    text-align: center;
+    padding: 1rem;
+    position: static;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hidden by default */
+        flex-direction: column;
+        position: absolute;
+        background-color: #1F1F1F;
+        width: 100%;
+        top: 60px; /* Adjust to navbar height */
+    }
+
+    .nav-toggle {
+        display: block; /* Show toggle on mobile */
+    }
+
+    .nav-links.active {
+        display: flex; /* Show links when active */
+    }
+}

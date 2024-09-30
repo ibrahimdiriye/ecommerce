@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Us Page">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- Navigation Bar -->
+        <header>
+            <nav class="navbar">
+                <div class="logo">Your Brand</div>
+                <div class="nav-toggle" id="nav-toggle">&#9776;</div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Contact Us Section -->
+        <section class="contact-us">
+            <h1>Contact Us</h1>
+            <form class="contact-form" action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone (optional):</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <h2>Contact Information</h2>
+            <div class="contact-info">
+                <p><strong>Email:</strong> info@yourbrand.com</p>
+                <p><strong>Phone:</strong> +123 456 7890</p>
+                <p><strong>Address:</strong> 123 Your Street, City, Country</p>
+            </div>
+
+            <h2>Business Hours</h2>
+            <div class="business-hours">
+                <p>Monday - Friday: 9 AM - 5 PM</p>
+                <p>Saturday: 10 AM - 4 PM</p>
+                <p>Sunday: Closed</p>
+            </div>
+
+            <!-- Optional: Embedded Map -->
+            <h2>Find Us Here</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434508513!2d144.953735215619!3d-37.81627987975103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f1a5a43%3A0x7d5b2ec7ec8f5f8!2sYour%20Brand%20Location!5e0!3m2!1sen!2s!4v1604586740121!5m2!1sen!2s" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"></iframe>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Brand. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frequently Asked Questions">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- Navigation Bar -->
+        <header>
+            <nav class="navbar">
+                <div class="logo">Your Brand</div>
+                <div class="nav-toggle" id="nav-toggle">&#9776;</div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- FAQ Section -->
+        <section class="faq">
+            <h1>Frequently Asked Questions</h1>
+            <input type="text" id="search" placeholder="Search questions..." class="search-bar">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>What is your return policy?</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>You can return any item within 30 days of purchase for a full refund, as long as the item is in its original condition.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>How long does shipping take?</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>Shipping typically takes 3-5 business days, depending on your location and the shipping method selected.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>Do you ship internationally?</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, we offer international shipping to select countries. Please check our shipping policy for details.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>Can I change my order after placing it?</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>Once an order is placed, we cannot guarantee changes, but please contact us as soon as possible.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Brand. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

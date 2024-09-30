@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product Details Page">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- Navigation Bar -->
+        <header>
+            <nav class="navbar">
+                <div class="logo">Your Brand</div>
+                <div class="nav-toggle" id="nav-toggle">&#9776;</div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Product Details Section -->
+        <section class="product-details">
+            <h1>Product Name</h1>
+            <div class="product-container">
+                <div class="product-images">
+                    <img src="product-large.jpg" alt="Product Large" class="main-image">
+                    <div class="thumbnail-container">
+                        <img src="product1.jpg" alt="Product Thumbnail 1" class="thumbnail" onclick="changeImage('product1.jpg')">
+                        <img src="product2.jpg" alt="Product Thumbnail 2" class="thumbnail" onclick="changeImage('product2.jpg')">
+                        <img src="product3.jpg" alt="Product Thumbnail 3" class="thumbnail" onclick="changeImage('product3.jpg')">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h2>$49.99</h2>
+                    <p>Description: This is a detailed description of the product, outlining its features, specifications, and any other relevant information.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <h2>Customer Reviews</h2>
+            <div class="reviews">
+                <div class="review">
+                    <p><strong>John Doe</strong>: "Great product! Highly recommend."</p>
+                    <span>Rating: ★★★★☆</span>
+                </div>
+                <div class="review">
+                    <p><strong>Jane Smith</strong>: "Satisfactory performance. Good value for money."</p>
+                    <span>Rating: ★★★★☆</span>
+                </div>
+            </div>
+
+            <h2>Related Products</h2>
+            <div class="related-products-carousel">
+                <div class="carousel-track">
+                    <div class="product-card">
+                        <img src="related-product1.jpg" alt="Related Product 1">
+                        <h3>Related Product 1</h3>
+                        <p>$39.99</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="related-product2.jpg" alt="Related Product 2">
+                        <h3>Related Product 2</h3>
+                        <p>$59.99</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="related-product3.jpg" alt="Related Product 3">
+                        <h3>Related Product 3</h3>
+                        <p>$49.99</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Brand. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script>
+        function changeImage(image) {
+            document.querySelector('.main-image').src = image;
+        }
+    </script>
+</body>
+</html>
